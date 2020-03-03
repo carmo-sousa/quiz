@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F7AEF8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title {
+    color: #333;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.card-body {
+    background-color: #FFFFFF;
+    height: 500px;
+    width: 1000px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-left {
+    background-color: #FFFFFF;
+}
+
+.card-content {
+    margin: 75px auto 0 auto;
+    width: 80%;
+}
+
+.card-content p {
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.card-left .title .title-cont {
+    color: #ccc;
+    font-size: .7em;
+}
+
+.card-left .avatar {
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+    margin: -50px auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.card-left .avatar i {
+    color: #FFF;
+    font-size: 50px;
+}
+
+.card-right {
+    background-color: #72DDf7;
+}
+
+.card-right .options {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.card-right .options .list {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-right .options .list .list-item {
+    margin: 25px 0;
+}
+
+.card-right .options .list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    transition: background-color .5s;
+    padding: 10px;
+    width: 100%;
+}
+
+.card-right .options .list a span {
+    color: #FFFFFF;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 30px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.card-right .options .list a:hover span {
+    border: 2px solid #333333;
+    color: #333333;
+}
+
+.card-right .card-footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-right .card-footer button {
+    background-color: #72DDf7;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.1em;
+    outline: none;
+    padding: 5px;
+    width: 125px;
+    transition: border color .6s;
+}
+
+.card-right .card-footer button:hover {
+    border: 2px solid #333333;
+    color: #333333;
+}
